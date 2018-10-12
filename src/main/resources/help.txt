@@ -1,0 +1,2 @@
+docker run -d --name gcwback -p 8080:8080 gcwback-docker
+docker container stop gcback
