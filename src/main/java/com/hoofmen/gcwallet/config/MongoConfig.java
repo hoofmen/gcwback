@@ -19,9 +19,9 @@ public class MongoConfig {
 
     public @Bean
     MongoDbFactory mongoDbFactory() throws Exception {
-        MongoClientURI mongoClientURI = new MongoClientURI("mongodb://user:user123@wifted-database:27017/gcw");
+        MongoClientURI mongoClientURI = new MongoClientURI("mongodb://user:user123@wifted-database:27017/wifted");
         MongoClient mongoClient = new MongoClient(mongoClientURI);
-        return new SimpleMongoDbFactory(mongoClient,"gcw");
+        return new SimpleMongoDbFactory(mongoClient,"wifted");
     }
 
     public @Bean
